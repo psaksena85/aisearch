@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'CVS Health Sans Regular';
+}
+
+.title__block {
+  margin-top: 20px;
+}
+.searchbox--wrapper {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.searchbox--input {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    margin-right: 24px;
+    border: 2px solid var(--color-grey-dark);
+    border-radius: var(--input-fields-border-radius);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    max-height: 50px;
+    line-height: 25.6px;
+}
+
+.results--wrapper {
+    margin-top: 20px;
+}
+
+.result--item {
+    -webkit-box-shadow: 0px 1.5px 10px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1.5px 10px 0px rgba(0, 0, 0, .2);
+    padding: 24px;
+    margin: 0 0 24px 0;
+    border-radius: 16px;
+}
+
+.result--item img {
+    border-radius: 16px;
+}
