@@ -1,0 +1,14 @@
+<?xml
+version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.aetna.com/about-us.html</loc>
+        <changefreq>Weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.aetna.com/about-us/aetna-awards-recognition.html</loc>
+        <changefreq>Weekly</changefreq>
+        <priority>.5</priority>
+    </url>
+</urlset>
