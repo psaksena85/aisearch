@@ -16,7 +16,7 @@ export default function App() {
     });
 
     const data = await res.json();
-    setResults(data.results);
+    setResults(data.results || []);
     setLoading(false);
   };
 
@@ -37,10 +37,20 @@ export default function App() {
       {loading && <p>Loading...</p>}
 
       <div style={{ marginTop: "2rem" }}>
-        {results.map((r, i) => (
+        {/* {results.map((r, i) => (
           <div key={i} style={{ marginBottom: "1rem", padding: "0.5rem", border: "1px solid #ccc" }}>
             <p>{r.text}</p>
             <a href={r.url} target="_blank" rel="noopener noreferrer">{r.url}</a>
+          </div>
+        ))} */}
+
+        {results.map((r, i) => (
+          <div key={i} style={{ marginBottom: "1rem", padding: "0.5rem", border: "1px solid #ccc" }}>
+            {r.image && <img src={r.image} alt={r.title} style={{ width: 200, marginTop: "0.5rem" }} />}
+            <h4>{r.title}</h4>
+            <p>{r.snippet}</p>
+            <a href={r.url} target="_blank" rel="noopener noreferrer">{r.url}</a>
+            
           </div>
         ))}
       </div>
